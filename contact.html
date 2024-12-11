@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafli Julian</title>
+    <style>
+        :root {
+            --primary-color: #3a4f63;
+            --secondary-color: #718096;
+            --background-color: #f7fafc;
+            --text-color: #2d3748;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            min-height: 100vh; /* Pastikan body setidaknya setinggi layar */
+            display: flex;
+            flex-direction: column; /* Mengatur arah flex menjadi kolom */
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .tag h1 {
+            font-size: 1.8rem;
+            color: #fff;
+        }
+
+        .tag a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e2e8f0;
+        }
+
+        .kontak1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 6rem;
+            gap: 2rem;
+            flex-wrap: wrap;
+            flex-grow: 1; /* Memungkinkan konten ini untuk tumbuh dan mengisi ruang */
+        }
+
+        .kontak1 img {
+            width: 120px;
+            height: 120px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .kontak1 img:hover {
+            transform: scale(1.1);
+        }
+
+        .kontak-description {
+            text-align: center;
+            margin: 2rem 0;
+            color: var(--secondary-color);
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .cta-button:hover {
+            background-color: #2c3e50;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: relative; 
+            width: 100%;
+            margin-top: auto; /* Memastikan footer berada di bawah konten */
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; 
+                align-items: center; 
+            }
+
+            .tag h1 {
+                font-size: 1.5rem;
+            }
+
+            nav li {
+                margin-left: 10px;
+            }
+
+            nav a {
+                font-size: 1rem; 
+            }
+
+            .kontak1 img {
+                width: 100px; 
+                height: 100px; 
+            }
+
+            .kontak1 h2 {
+                font-size: 1.2rem; 
+            }
+
+            .cta-button {
+                font-size: 1rem; 
+            }
+        }
+
+        @media (max-width: 480px) {
+            .kontak1 {
+                flex-direction: column; 
+            }
+
+            .kontak1 img {
+                width: 80px; 
+                height: 80px; 
+            }
+
+            .kontak1 h2 {
+                font-size: 1rem; 
+            }
+
+            .cta-button {
+                width: 100%; 
+                font-size: 0.9rem; 
+            }
+        }
+
+        @media (max-width: 320px) {
+            .tag h1 {
+                font-size: 1.2rem; 
+            }
+
+            nav a {
+                font-size: 0.8rem; 
+            }
+
+            footer {
+                font-size: 0.7rem; 
+            }
+        }
+
+        .kontak1 h2 {
+            text-align: center;
+            margin-bottom: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="tag">
+                <a href="index.html"><h1>Home</h1></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="award.html">Awards</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="kontak1">
+        <a href="https://www.instagram.com/rafly_1286/">
+            <img src="image/3d-square-with-instagram-logo_125540-1566.avif" alt="Instagram">
+        </a>
+        <a href="http://wa.me/083892591882">
+            <img src="image/glowing-whatsapp-logo-realistic-3d-circle_125540-2095.avif" alt="WhatsApp">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61553161665835">
+            <img src="image/3d-square-with-facebook-logo_125540-1565.jpg" alt="Facebook">
+        </a>
+    </div>
+
+    <div class="kontak-description">
+        <h3>Mari Berhubungan!</h3>
+        <p>Jangan ragu untuk menghubungi saya melalui salah satu platform di atas. Saya selalu senang untuk berhubungan!</p>
+        <a href="http://wa.me/083892591882" class="cta-button">Hubungi Saya</a>
+    </div>
+
+    <div class="kontak1">    
+        <h2>Adapun sosmed saya <br> Anda bisa klik gambar di atas</h2>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Muhamad Rafli Julian. All rights reserved.</p>
+    </footer>
+</body>
+</html>

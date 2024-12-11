@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-color: #ecf0f1;
+            --background-color: rgba(44, 62, 80, 0.7);
+            --gradient-background: linear-gradient(to bottom right, #6a82fb, #fc5c7d); 
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: var(--gradient-background); 
+            min-height: 100vh;
+        }
+
+        .overlay {
+            background-color: rgba(44, 62, 80, 0.7); 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .tag h1 {
+            font-size: 1.5rem;
+        }
+
+        .tag a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex; 
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .kontak2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 6rem 2rem; 
+            flex-grow: 1;
+            margin-top: 80px;
+        }
+
+        .kontak2 h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .kontak2 p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 1rem;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .profile-image {
+            width: 150px; 
+            height: 150px; 
+            border-radius: 50%;
+            margin-bottom: 1.5rem;
+            border: 3px solid var(--accent-color); 
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; 
+                align-items: center; 
+            }
+
+            .tag h1 {
+                font-size: 1.5rem;
+            }
+
+            nav li {
+                margin-left: 10px; 
+            }
+
+            nav a {
+                font-size: 0.9rem; 
+            }
+
+            .kontak2 h1 {
+                font-size: 1.8rem;
+            }
+
+            .kontak2 p {
+                font-size: 1rem;
+            }
+
+            .profile-image {
+                width: 120px; 
+                height: 120px; 
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tag h1 {
+                font-size: 1.2rem; 
+            }
+
+            nav li {
+                display: block; 
+                margin-left: 0; 
+                margin-top: 10px; 
+            }
+
+            .kontak2 h1 {
+                font-size: 1.5rem; 
+            }
+
+            .kontak2 p {
+                font-size: 0.9rem; 
+            }
+
+            footer {
+                font-size: 0.8rem; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <header>
+            <div class="container">
+                <div class="tag">
+                    <a href="index.html"><h1>Home</h1></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="aboutme.html">About Me</a></li>
+                        <li><a href="award.html">Award</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="kontak2">
+            <img src="image/foto2.jpg" alt="Muhamad Rafli Julian" class="profile-image">
+            <h1>Hallo, nama saya <span class="highlight">Muhamad Rafli Julian</span></h1>
+            <p>Saya tinggal di Bogor (Cisarua Puncak). Hobi saya adalah badminton, <span>Badminton melatih kecepatan dan ketepatan dalam mengerjakan Projek lebih cepat.</span></p>
+            <p>Saya bersekolah di <span class="highlight">SMK WIKRAMA</span> jurusan <span class="highlight">PPLG (Pengembangan Perangkat Lunak dan Gim)</span>. PPLG sangat berguna untuk masa depan karena teknologi semakin canggih.</p>
+            <p>Saat ini, saya sedang mendalami bahasa Pemrograman lain.</p>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Muhamad Rafli Julian. All rights reserved. </p>
+    </footer>
+</body>
+</html>

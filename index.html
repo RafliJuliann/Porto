@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #3a4f63;
+            --secondary-color: #718096;
+            --background-color: #f7fafc;
+            --text-color: #2d3748;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .tag h1 {
+            float: left;
+            font-size: 1.5rem;
+        }
+
+        .tag a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav {
+            float: right;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e2e8f0;
+        }
+
+        .kontak {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            padding: 0 10%;
+            background-color: #fff;
+        }
+
+        .kontak h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .kontak p {
+            font-size: 1.1rem;
+            color: var(--secondary-color);
+            margin-bottom: 2rem;
+            max-width: 500px;
+        }
+
+        .kontak img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 0.7rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-color);
+        }
+        footer {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="tag">
+                <a href="index.html"><h1>Rafli Julian</h1></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="award.html">Awards</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="kontak">
+        <div>
+            <h1>Hai, Nama saya <br> Muhamad Rafli Julian</h1>
+            <p>Saya adalah seorang pengembang web dan game yang bersemangat. Dengan kreativitas dan keahlian teknis, saya menciptakan pengalaman digital yang menarik dan inovatif.</p>
+            <a href="contact.html" class="btn">Hubungi Saya</a>
+        </div>
+        <img src="image/boy-browsing-internet-laptop_1308-118693.jpg" alt="Muhamad Rafli Julian">
+    </div>
+    <footer>
+        <p>&copy; 2024 Muhamad Rafli Julian. All rights reserved. </p>
+    </footer>
+</body>
+</html>
+
